@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+    <head>
+    	<title>Example 6-1: Priority/Specificity</title>
+    	<meta charset="utf-8">
+    	<link rel="stylesheet" type="text/css" href="../css/default.css">
+    	<style>
+    		body {
+    			background-color: skyblue;
+    		}
+
+            article h1 + section > p:first-of-type::first-line {
+                background-color: gray;
+            }
+
+    		
+    	</style>
+    </head>
+    <body>
+        <article>
+            a1
+            <h1>
+                h1
+            </h1>
+            <section>
+                section
+                <p>
+                    p<br/>
+                    1
+                    2
+                    3
+                </p>
+            </section>
+        </article>
+        <article>
+            a2
+            <h1>
+                h1
+            </h1>
+            <section>
+                sec2
+                <p>
+                    p<br/>
+                    q
+                </p>
+            </section>
+        </article>
+        <article>
+            a3
+            <h1>
+                h1
+            </h1>
+            <section>
+                s3
+                <h2>
+                  h2  
+                </h2>
+                <p>
+                    p<br/>
+                    q
+                </p>
+            </section>
+        </article>
+    </body>
+</html>
