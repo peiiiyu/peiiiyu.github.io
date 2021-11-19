@@ -1,0 +1,52 @@
+<!DOCTYPE HTML>
+<html lang="en-us">
+	<head>
+		<title>Quiz 5</title>
+		<style>
+			/* Do NOT change anything in <style> */
+			div {
+				display: inline-block;
+				margin: 10px;
+				height: 50px;
+				width: 50px;
+				background-color: green;
+			}
+		</style>
+		<script>
+			window.onload = function() {
+ 				/* Edit your script here to complete the quiz */
+ 				let firstDiv = document.querySelector('div');
+ 				let changeButton1 = document.getElementById('changeDiv1');
+	            changeButton1.addEventListener('click', function(){
+		        firstDiv.style.backgroundColor = 'red';
+		        firstDiv.style.height = '40px';
+		        firstDiv.style.width = '100px';
+	});
+	            let SecondDiv = document.getElementById('no2');
+ 				let changeButton2 = document.getElementById('changeDiv2');
+	            changeButton2.addEventListener('click', function(){
+		        SecondDiv.style.backgroundColor = 'black';
+		        SecondDiv.style.height = '150px';
+		        SecondDiv.style.width = '60px';
+	});
+	            let ThirdDiv = document.getElementById('no3');
+ 				let changeButton3 = document.getElementById('changeDiv3');
+	            changeButton3.addEventListener('click', function(){
+		        ThirdDiv.style.backgroundColor = 'gold';
+		        ThirdDiv.style.height = '200px';
+		        ThirdDiv.style.width = '200px';
+	});
+			};
+		</script>
+	</head>
+	<body>
+		<!-- You can add attributes to any HTML element, but you cannot change/add/remove any HTML element -->
+		<div>1</div> <!-- The first <div> needs to have a red background color and a size of 100 x 40 px -->
+		<div id="no2">2</div> <!-- The second <div> needs to have a black background color and a size of 60 x 150 px -->
+		<div id="no3">3</div> <!-- The third <div> needs to have a gold background color and a size of 200 x 200 px -->
+		<!-- Each of the <button> below must change one <div> based on the text description -->
+		<button id="changeDiv1">Change Div 1</button>
+		<button id="changeDiv2">Change Div 2</button>
+		<button id="changeDiv3">Change Div 3</button>
+	</body>
+</html>
