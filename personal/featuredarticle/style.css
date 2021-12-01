@@ -16,6 +16,14 @@ body {
 	overflow-y: auto;
 	background-color: lightgray;
 	coler: #000a16;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 2vh;
+	line-height: 3vh;
+	text-align: center;
+}
+
+p {
+	text-align: left;
 }
 
 nav {
@@ -56,18 +64,45 @@ a, a:visited {
 	text-decoration: underline;
 }
 
+img#img1 {
+	width: 600px;
+	height: 400px;
+}
+
+img#img3, img#img4 {
+	width: 400px;
+	height: 300px;
+}
+
 img {
 	width: 300px;
 	height: 300px;
 }
 
-body > h1 {
+h1, h2, h3 {
 	font-family: 'Yeseva One', cursive;
-	font-size: 4vh;
-	line-height: 6vh;
+	font-size: 3vh;
+	line-height: 4.5vh;
 }
-body > p {
+
+
+button:hover {
+	opacity: 0.7;
+}
+
+button {
+	background-color: lightblue;
+	border: none;
+	text-align: center;
+	opacity: 0.85;
+	padding: 2px 4px;
 	font-family: 'Libre Baskerville', serif;
 	font-size: 2vh;
 	line-height: 3vh;
+	border-radius: 12px;
+}
+
+button > a {
+	color: dimgray;
+	text-decoration: none;
 }
