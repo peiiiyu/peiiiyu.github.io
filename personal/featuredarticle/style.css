@@ -38,7 +38,7 @@ nav {
 }
 
 nav > a {
-	background-color: #89C2D9;
+	background-color: slategray;
 	color: white;
 	padding: 2px 4px;
 	text-decoration: none;
@@ -62,7 +62,7 @@ nav > a:visited {
 }
 
 a, a:visited {
-	background-color: #89C2D9;
+	background-color: slategray;
 	text-decoration: underline;
 }
 
