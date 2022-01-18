@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins&family=Yeseva+One&display=swap');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+body {
+	overflow-x: hidden;
+	overflow-y: auto;
+	background-color: lightgray;
+	coler: #000a16;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 2vh;
+	line-height: 3vh;
+}
+
+nav {
+	margin-top: 40px;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 3vh;
+	line-height: 4.5vh;
+}
+
+nav > a {
+	background-color: slategray;
+	color: white;
+	padding: 2px 5px;
+	text-decoration: none;
+	opacity: 0.6;
+}
+
+nav > a:not(:first-of-type) {
+	border-left: solid 4px lightgray;
+	border-radius: 15px;
+}
+
+nav > a:first-of-type {
+	width: 2.4vw;
+	background-color: lightgray;
+	opacity: 1;
+}
+
+nav > a:hover {
+	opacity: 0.95;
+}
+
+nav > a:last-of-type {
+	width: 2.4vw;
+	background-color: lightgray;
+	opacity: 1;
+}
+
+h1 {
+	margin-top: 80px;
+	border-radius: 30px;
+	font-family: 'Yeseva One', cursive;
+	font-size: 4vh;
+	line-height: 6vh;
+	color: slategray;
+}
+
+img {
+	width: 400px;
+	height: 300px;
+	border-radius: 25px;
+	margin: 50px 5px;
+}
+
+p {
+	font-family: 'Yeseva One', cursive;
+	color: slategray;
+	font-size: 2vh;
+	line-height: 3vh;
+}
+
+button:hover {
+	opacity: 0.7;
+}
+
+button > a:hover {
+	opacity: 0.7;
+}
+
+button {
+	background-color: slategray;
+	border: none;
+	text-align: center;
+	opacity: 0.85;
+	padding: 2px 4px;
+	font-family: 'Libre Baskerville', serif;
+	font-size: 2vh;
+	line-height: 3vh;
+	border-radius: 12px;
+	margin: 2px 2px;
+}
+
+button > a {
+	color: white;
+	text-decoration: none;
+}

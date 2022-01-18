@@ -16,32 +16,53 @@
 		</style>
 		<script>
 			window.onload = function() {
-				$('body > button#first').on('click', function() {
-		let newCSS1 = {
-			'background-color': 'red',
-			'height': '40px',
-			'width': '100px';
-		};
-		let fb = $('body > button#first');
-		$('body > button#second').on('click', function() {
-		let newCSS2 = {
-			'background-color': 'black',
-			'height': '150px',
-			'width': '60px';
-		};
-		let fb = $('body > button#first');
-		$('body > button#third').on('click', function() {
-		let newCSS3 = {
-			'background-color': 'gold',
-			'height': '200px',
-			'width': '200px';
-		};
-		console.log(newCSS1)
-		console.log(newCSS2)
-		console.log(newCSS3)
-		
-	});
- 				
+				$('button#first').on('click', function() {
+				let buttonId = this.id;
+				if(buttonId === 'first') {
+					$('div').eq(0).css({
+						'background-color': 'red',
+						'width': '100px',
+						'height': '40px'
+					});
+				}
+				else if(buttonId === 'second') {
+					$('div').eq(1).css({
+						'background-color': 'black',
+						'width': '60px',
+						'height': '150px'
+					});
+				}
+				else {
+					$('div').eq(2).css({
+						'background-color': 'gold',
+						'width': '200px',
+						'height': '200px'
+					});
+				}
+			});
+				/*
+			$('button').eq(0).on('click', function() {
+				$('div').eq(0).css({
+					'background-color': 'red',
+					'width': '100px',
+					'height': '40px'
+				});
+			});
+			$('button').eq(1).on('click', function() {
+				$('div').eq(1).css({
+					'background-color': 'black',
+					'width': '60px',
+					'height': '150px'
+				});
+			});
+			$('button').eq(2).on('click', function() {
+				$('div').eq(2).css({
+					'background-color': 'gold',
+					'width': '200px',
+					'height': '200px'
+				});
+			});
+			*/
 			};
 		</script>
 	</head>
