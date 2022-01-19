@@ -1,5 +1,5 @@
 
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins&family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Noto+Serif+TC:wght@500&family=Yeseva+One&display=swap');
 * {
 	margin: 0;
 	padding: 0;
@@ -16,9 +16,6 @@ body {
 	overflow-y: auto;
 	background-color: lightgray;
 	coler: #000a16;
-	font-family: 'Libre Baskerville', serif;
-	font-size: 2vh;
-	line-height: 3vh;
 }
 
 nav {
@@ -60,13 +57,41 @@ nav > a:last-of-type {
 img {
 	width: 400px;
 	height: 300px;
-	margin-top: 60px;
+	border-radius: 25px;
+	margin: 30px 5px;
+}
+
+article {
+	margin-left: 80px;
+	margin-right: 80px;
+	background-color: ghostwhite;
+	opacity: 0.8;
+	padding: 10px 5px;
+}
+
+p#e {
+	font-family:  'Libre Baskerville', serif;
+	font-size: 2vh;
+	line-height: 3vh;
+}
+
+p#ch {
+	font-family:  'Noto Serif TC', serif;
+	font-size: 2vh;
+	line-height: 3vh;
+}
+
+button:hover {
+	opacity: 0.7;
+}
+
+button > a:hover {
+	opacity: 0.7;
 }
 
 button {
 	background-color: slategray;
 	border: none;
-	text-align: center;
 	opacity: 0.85;
 	padding: 2px 4px;
 	font-family: 'Libre Baskerville', serif;
@@ -74,6 +99,8 @@ button {
 	line-height: 3vh;
 	border-radius: 12px;
 	margin: 2px 2px;
+	margin-left: 44%;
+	margin-top: 5px;
 }
 
 button > a {
